@@ -1,0 +1,28 @@
+Although the field of machine translation has a very long history, the number of really successful systems is not very impressive.
+The main reason why the field of MT has not met the expectations of sci-fi literature, but also the expectations of scientific community, is the complexity of the task itself.
+A successful automatic translation system requires an application of techniques from several areas of computational linguistics (morphology, syntax, semantics, discourse analysis etc.) as a necessary, but not a sufficient condition.
+The general opinion is that it is easier to create an MT system for a pair of related languages.
+In our contribution we would like to demonstrate that this assumption holds only for really very closely related languages.
+The project was called RUSLAN and aimed at the translation of documentation in the domain of operating systems for mainframe computers.
+It was developed in cooperation with the Research Institute of Mathematical Machines in Prague.
+At that time in former COMECON countries it was obligatory to translate any kind of documentation to such systems into Russian.
+The work on the Czech-to-Russian MT system RUSLAN (cf. Oliva (1989)) started in 1985. It was terminated in 1990 (with COMECON gone) for the lack of funding.
+The system was rule-based, implemented in Colmerauer's Q-systems.
+It contained a fullfledged morphological and syntactic analysis of Czech, a transfer and a syntactic and morphological generation of Russian.
+At the time when the work was terminated in 1990, the system had a main translation dictionary of about 8000 words, accompanied by so called transducing dictionary covering another 2000 words.
+This fact allows for the "translation" o f technical terms by means of a direct transcription of productive endings and a slight (regular) adjustment o f the spelling of the stem.
+It was generally assumed that for the pair Czech/Russian the transducing dictionary would be able to profit from a substantially greater number o f productive rules.
+This hypothesis proved to be wrong, too (see B6mov~, Kubofi (1990)). The set o f productive endings for both pairs (English/Czech, as developed for an earlier MT system from English to Czech, and Czech/Russian) was very similar.
+There were two main factors that caused a deterioration of the translation.
+The first factor was the incompleteness o f the main dictionary of the system.
+There were several reasons of parsing failures.
+One o f them was the existence of non-projective constructions, which are quite common in Czech even in relatively short sentences.
+was_not._possible to_open.
+- It was not possible to open the file].
+Another source of trouble was the use o f so-called semantic features.
+These features were based on lexical semantics o f individual words.
+Their main task was to support a semantically plausible analysis and to block the implausible ones.
+It turned out that the question o f implausible combinations o f semantic features is also more complex than it was supposed to be.
+The practical outcome o f the use o f semantic features was a higher ratio of parsing failures - semantic features often blocked a plausible analysis.
+For example, human lexicographers assigned the verb 'to run' a semantic feature stating that only a noun with semantic features o f a human or other living being may be assigned the role o f subject of this verb.
+It was o f course very easy to correct the semantic feature in the dictionary, but the problem was that there were far too many corrections required.
